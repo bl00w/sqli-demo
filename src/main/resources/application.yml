@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/postgres"
+    username: postgres
+    password: example
+
+    initialization-mode: always
+    schema: classpath:schema.sql
+    schema-username: postgres
+    schema-password: example
+
+    data: classpath:data.sql
+    data-username: postgres
+    data-password: example
